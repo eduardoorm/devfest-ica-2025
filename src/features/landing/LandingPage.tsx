@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
 import ChallengesSection from './components/ChallengesSection';
 import RewardsSection from './components/RewardsSection';
+import RankingSection from './components/RankingSection';
 import Footer from '../../shared/components/Footer';
 
 interface LandingPageProps {
@@ -20,6 +21,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigateToLogin }) => {
           <HeroSection />
           <FeaturesSection />
           <ChallengesSection />
+          <RankingSection />
           <RewardsSection />
         </main>
         <Footer />
