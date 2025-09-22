@@ -1,0 +1,76 @@
+name: Bug Report
+description: Reportar un error en DevFest Ica 2025
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por reportar este bug. Por favor proporciona la información detallada para ayudarnos a resolverlo.
+
+  - type: input
+    id: bug-summary
+    attributes:
+      label: Resumen del Bug
+      description: Breve descripción del problema
+      placeholder: ej. El botón de login no funciona en móviles
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Descripción Detallada
+      description: Describe el bug con detalle
+      placeholder: |
+        1. Qué estabas haciendo cuando ocurrió el error
+        2. Qué esperabas que pasara
+        3. Qué pasó en realidad
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Pasos para Reproducir
+      description: Pasos específicos para reproducir el bug
+      placeholder: |
+        1. Ir a '...'
+        2. Hacer click en '...'
+        3. Scrollear hasta '...'
+        4. Ver error
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Navegador
+      description: ¿En qué navegador ocurre el error?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Otro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: device
+    attributes:
+      label: Dispositivo
+      description: ¿En qué tipo de dispositivo ocurre?
+      options:
+        - Desktop
+        - Tablet
+        - Móvil
+        - Todos
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Contexto Adicional
+      description: Cualquier información adicional, capturas de pantalla, etc.

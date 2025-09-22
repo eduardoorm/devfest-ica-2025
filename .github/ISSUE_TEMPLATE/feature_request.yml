@@ -1,0 +1,60 @@
+name: Feature Request
+description: Solicitar una nueva funcionalidad para DevFest Ica 2025
+title: "[FEATURE] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ¡Gracias por sugerir una nueva funcionalidad! Nos ayuda a mejorar el proyecto.
+
+  - type: input
+    id: feature-title
+    attributes:
+      label: Título de la Funcionalidad
+      description: Nombre corto y descriptivo
+      placeholder: ej. Sistema de notificaciones push
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Descripción de la Funcionalidad
+      description: Describe detalladamente qué funcionalidad te gustaría ver
+      placeholder: |
+        - ¿Qué problema resuelve esta funcionalidad?
+        - ¿Cómo funcionaría?
+        - ¿Qué beneficios traería?
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-cases
+    attributes:
+      label: Casos de Uso
+      description: Describe escenarios específicos donde esta funcionalidad sería útil
+      placeholder: |
+        1. Como participante, quiero recibir notificaciones...
+        2. Como organizador, necesito poder...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridad
+      description: ¿Qué tan importante es esta funcionalidad?
+      options:
+        - Baja - sería bueno tenerla
+        - Media - mejoraría la experiencia
+        - Alta - es necesaria para el funcionamiento
+        - Crítica - bloquea funcionalidades existentes
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Contexto Adicional
+      description: Mockups, referencias, links a ejemplos similares, etc.
