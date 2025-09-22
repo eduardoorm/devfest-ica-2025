@@ -1,0 +1,11 @@
+---
+mode: agent
+---
+- Crete a React component based on the following requirements.
+- Use TypeScript and TailwindCSS for styling.
+- Ensure the component is responsive and accessible.
+- Follow best practices for code structure and readability.
+- Include comments to explain the functionality of the code.
+- It' s important to use the GDG Ica branding colors (blue, green, yellow, red) adapted for GDG Ica.
+- Add to the README.md file a section that describes the component, its props, and how to use it.
+- Provide an example of how to use the component in a parent component or application.
