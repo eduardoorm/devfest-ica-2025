@@ -34,7 +34,8 @@ src/
 ├── shared/                 # Componentes y utilidades compartidas
 │   ├── components/         # Componentes reutilizables
 │   │   ├── Header.tsx
-│   │   └── Footer.tsx
+│   │   ├── Footer.legacy.tsx  # Footer original (deprecated)
+│   │   └── NewFooter.tsx   # Footer mejorado (activo)
 │   └── types/             # Tipos TypeScript
 └── assets/                # Recursos estáticos
 ```
@@ -77,6 +78,94 @@ src/
 - Redes sociales
 - Newsletter subscription
 - Información legal
+
+## 🎯 Componente NewFooter
+
+El componente `NewFooter` es un footer mejorado que sigue las guías de diseño de GDG Ica, proporcionando una experiencia de usuario superior con diseño responsivo y funcionalidades avanzadas.
+
+### ✨ Características
+
+- ✅ **Diseño Responsivo**: Se adapta perfectamente a desktop (4 columnas), tablet (2 columnas) y móviles (1 columna)
+- ✅ **Branding GDG Ica**: Utiliza la paleta oficial de colores de Google Developers
+- ✅ **Tipografía Google Sans**: Fuente coherente con la identidad de Google
+- ✅ **Accesibilidad (WCAG 2.1)**: Navegación por teclado, ARIA labels y semántica HTML correcta
+- ✅ **Newsletter Interactivo**: Formulario de suscripción con validación y estados de carga
+- ✅ **Enlaces Sociales**: Enlaces a redes sociales con iconos SVG optimizados
+- ✅ **Secciones Organizadas**: Navegación, recursos, newsletter y enlaces legales claramente separados
+- ✅ **Fácil Extensión**: Estructura modular para agregar nuevos enlaces o sponsors
+
+### 🎨 Diseño y Estructura
+
+```tsx
+<NewFooter />
+```
+
+**Secciones incluidas:**
+1. **Branding**: Logo, nombre y descripción de GDG Ica
+2. **Social Links**: Twitter, LinkedIn, GitHub, Instagram
+3. **Navegación**: Enlaces principales del sitio
+4. **Recursos**: Documentación, tutoriales, API, GitHub
+5. **Newsletter**: Suscripción con validación
+6. **Legal**: Términos, privacidad, código de conducta
+
+### 📱 Responsive Breakpoints
+
+```css
+/* Mobile: stack de 1 columna */
+grid-cols-1
+
+/* Tablet: 2 columnas */
+md:grid-cols-2 
+
+/* Desktop: 4 columnas con brand section expandida */
+lg:grid-cols-4 (brand ocupa 2 columnas)
+```
+
+### 🔧 Personalización
+
+**Colores utilizados:**
+- `bg-gray-900`: Fondo principal
+- `text-white`: Texto principal
+- `text-gray-300`: Texto secundario
+- `text-gray-400`: Texto deshabilitado
+- `gdg-blue`: Enlaces de navegación al hover
+- `gdg-green`: Enlaces de recursos al hover
+
+**Espaciado:**
+- `py-16`: Padding principal del footer
+- `py-8`: Padding sección newsletter
+- `py-6`: Padding sección copyright
+- `space-x-4`: Espaciado social links
+- `space-y-3`: Espaciado lista de enlaces
+
+### 🚀 Implementación
+
+El componente `NewFooter` reemplaza al `Footer` original en:
+
+```tsx
+// Antes
+import Footer from '../../shared/components/Footer';
+
+// Ahora
+import NewFooter from '../../shared/components/NewFooter';
+
+// Uso
+<NewFooter />
+```
+
+### 📝 Estados del Newsletter
+
+- **Idle**: Estado inicial con botón "Suscribirse"
+- **Loading**: Muestra "Suscribiendo..." durante el proceso
+- **Disabled**: Botón deshabilitado si el email está vacío
+- **Success**: Limpia el formulario tras suscripción exitosa
+
+### ♿ Accesibilidad
+
+- **ARIA Labels**: Todos los elementos interactivos tienen etiquetas descriptivas
+- **Navegación por teclado**: Focus visible en todos los enlaces y botones
+- **Semántica HTML**: Uso correcto de `<nav>`, `<footer>`, `<contentinfo>`
+- **Screen readers**: Texto alternativo para iconos y elementos visuales
 
 ## 🚀 Instalación y Uso
 
