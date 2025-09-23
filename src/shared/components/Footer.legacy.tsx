@@ -1,6 +1,12 @@
-import React from 'react';
+/**
+ * @deprecated This component has been replaced by NewFooter.tsx
+ * @see NewFooter.tsx for the current footer implementation
+ * 
+ * Legacy Footer component - kept for reference only
+ * DO NOT USE - use NewFooter instead
+ */
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container-custom">

@@ -34,7 +34,7 @@ src/
 ├── shared/                 # Componentes y utilidades compartidas
 │   ├── components/         # Componentes reutilizables
 │   │   ├── Header.tsx
-│   │   ├── Footer.tsx      # Footer original (legacy)
+│   │   ├── Footer.legacy.tsx  # Footer original (deprecated)
 │   │   └── NewFooter.tsx   # Footer mejorado (activo)
 │   └── types/             # Tipos TypeScript
 └── assets/                # Recursos estáticos
