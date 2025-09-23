@@ -3,6 +3,7 @@ import Header from '../../shared/components/Header';
 import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
 import ChallengesSection from './components/ChallengesSection';
+import RankingSection from './components/RankingSection';
 import RewardsSection from './components/RewardsSection';
 import Footer from '../../shared/components/Footer';
 
@@ -20,6 +21,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigateToLogin }) => {
           <HeroSection />
           <FeaturesSection />
           <ChallengesSection />
+          <RankingSection />
           <RewardsSection />
         </main>
         <Footer />
