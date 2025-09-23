@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import LandingPage from './features/landing/LandingPage'
 import Login from './features/auth/components/Login'
 import type { LoginFormData } from './features/auth/types'
