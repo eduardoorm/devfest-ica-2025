@@ -153,22 +153,22 @@ const Header: React.FC<HeaderProps> = ({ onNavigateToLogin }) => {
         {/* Mobile Navigation Drawer */}
         <div 
           id="mobile-menu"
-          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out bg-gradient-to-br from-gdg-blue via-blue-600 to-gdg-green ${
             isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
           }`}
           role="navigation"
           aria-label="Menú de navegación móvil"
         >
-          <div className="py-4 border-t border-gray-100">
+          <div className="py-4 border-t border-white/20">
             <nav className="flex flex-col space-y-1">
               {/* Mobile Navigation Links */}
               <a 
                 href="#home" 
                 onClick={closeMenu}
-                className="flex items-center px-4 py-3 text-gray-700 hover:text-gdg-blue hover:bg-blue-50 rounded-lg transition-all duration-200 group"
+                className="flex items-center px-4 py-3 text-white hover:text-gdg-yellow hover:bg-white/10 rounded-lg transition-all duration-200 group"
                 aria-label="Ir a Inicio"
               >
-                <svg className="w-5 h-5 mr-3 text-gdg-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 mr-3 text-gdg-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
                 <span className="font-medium">Inicio</span>
@@ -177,10 +177,10 @@ const Header: React.FC<HeaderProps> = ({ onNavigateToLogin }) => {
               <a 
                 href="#challenges" 
                 onClick={closeMenu}
-                className="flex items-center px-4 py-3 text-gray-700 hover:text-gdg-green hover:bg-green-50 rounded-lg transition-all duration-200 group"
+                className="flex items-center px-4 py-3 text-white hover:text-gdg-yellow hover:bg-white/10 rounded-lg transition-all duration-200 group"
                 aria-label="Ir a Retos"
               >
-                <svg className="w-5 h-5 mr-3 text-gdg-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 mr-3 text-gdg-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
                 <span className="font-medium">Retos</span>
@@ -189,7 +189,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigateToLogin }) => {
               <a 
                 href="#rewards" 
                 onClick={closeMenu}
-                className="flex items-center px-4 py-3 text-gray-700 hover:text-gdg-yellow hover:bg-yellow-50 rounded-lg transition-all duration-200 group"
+                className="flex items-center px-4 py-3 text-white hover:text-gdg-yellow hover:bg-white/10 rounded-lg transition-all duration-200 group"
                 aria-label="Ir a Premios"
               >
                 <svg className="w-5 h-5 mr-3 text-gdg-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -201,10 +201,10 @@ const Header: React.FC<HeaderProps> = ({ onNavigateToLogin }) => {
               <a 
                 href="#profile" 
                 onClick={closeMenu}
-                className="flex items-center px-4 py-3 text-gray-700 hover:text-gdg-red hover:bg-red-50 rounded-lg transition-all duration-200 group"
+                className="flex items-center px-4 py-3 text-white hover:text-gdg-yellow hover:bg-white/10 rounded-lg transition-all duration-200 group"
                 aria-label="Ir a Perfil"
               >
-                <svg className="w-5 h-5 mr-3 text-gdg-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 mr-3 text-gdg-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
                 <span className="font-medium">Perfil</span>

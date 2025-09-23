@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import LandingPage from './features/landing/LandingPage'
 import Login from './features/auth/components/Login'
 import type { LoginFormData } from './features/auth/types'
@@ -9,18 +9,15 @@ function App() {
   const showLoginPage = () => setCurrentPage('login')
 
   // Handlers para el Login
-  const handleLogin = async (formData: LoginFormData) => {
-    console.log('Login attempt:', formData)
+  const handleLogin = async (_formData: LoginFormData) => {
     // TODO: Implementar lógica de autenticación
   }
 
   const handleForgotPassword = () => {
-    console.log('Forgot password clicked')
     // TODO: Implementar lógica de recuperación de contraseña
   }
 
   const handleSignUp = () => {
-    console.log('Sign up clicked')
     // TODO: Implementar navegación a registro
   }
 

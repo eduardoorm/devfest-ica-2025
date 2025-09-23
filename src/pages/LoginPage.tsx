@@ -25,7 +25,6 @@ const LoginPage: React.FC = () => {
         throw new Error('Credenciales incorrectas');
       }
 
-      console.log('Login exitoso:', data);
       alert(`¡Bienvenido! Email: ${data.email}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Error desconocido');
