@@ -1,16 +1,15 @@
-import React from 'react';
 import Header from '../../shared/components/Header';
 import HeroSection from './components/HeroSection';
 import FeaturesSection from './components/FeaturesSection';
 import ChallengesSection from './components/ChallengesSection';
 import RewardsSection from './components/RewardsSection';
-import Footer from '../../shared/components/Footer';
+import NewFooter from '../../shared/components/NewFooter';
 
 interface LandingPageProps {
   onNavigateToLogin?: () => void;
 }
 
-const LandingPage: React.FC<LandingPageProps> = ({ onNavigateToLogin }) => {
+const LandingPage = ({ onNavigateToLogin }: LandingPageProps) => {
   return (
     <div className="min-h-screen bg-white">
       <Header onNavigateToLogin={onNavigateToLogin} />
@@ -22,7 +21,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigateToLogin }) => {
           <ChallengesSection />
           <RewardsSection />
         </main>
-        <Footer />
+        <NewFooter />
       </div>
     </div>
   );
